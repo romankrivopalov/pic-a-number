@@ -1,1 +1,1 @@
-# pic-a-number
+# pick-a-number
