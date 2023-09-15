@@ -1,0 +1,7 @@
+.btn_type_start {
+  background-color: var(--color-system-purple);
+}
+
+.btn_type_start:active {
+  background-color: var(--color-system-purple-dark);
+}

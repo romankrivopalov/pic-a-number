@@ -1,11 +1,11 @@
-.start__input {
+.gameplay__input {
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
   padding: 8px 24px;
   width: 100%;
   font-size: 32px;
-  line-height: 48px;
+  line-height: 40px;
   color: var(--color-system-black);
   background-color: var(--color-system-yellow);
   box-shadow: 4px 4px 0 0 var(--color-system-black);
@@ -13,19 +13,19 @@
   border-radius: 16px;
 }
 
-.start__input::-webkit-outer-spin-button,
-.start__input::-webkit-inner-spin-button {
+.gameplay__input::-webkit-outer-spin-button,
+.gameplay__input::-webkit-inner-spin-button {
   display: none;
 }
 
-.start__input:focus {
+.gameplay__input:focus {
   outline: none;
 }
 
 @media screen and (min-width: 768px) {
-  .start__input {
+  .gameplay__input {
     font-size: 48px;
-    line-height: 56px;
+    line-height: 64px;
     border: 4px solid var(--color-system-black);
   }
 }

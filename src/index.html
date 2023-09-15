@@ -23,7 +23,7 @@
           </div>
         </div>
         <button
-          class="start__btn"
+          class="btn btn_type_start"
           data-type="start"
           type="submit">
           Start!
@@ -32,9 +32,26 @@
     </section>
 
     <section class="gameplay">
-      <div class="header">
-        reset
-      </div>
+      <form class="gameplay__content">
+        <div class="gameplay__row">
+          <button class="btn btn_type_reset" type="button" data-type="reset">
+            reset
+          </button>
+          <div class="moves">
+            <p class="moves__label">moves</p>
+            <div class="moves__count">4</div>
+          </div>
+        </div>
+
+        <div class="gameplay__row">
+          <input class="gameplay__input" type="number" value="1" min="1" max="1000" />
+          <button class="btn btn_type_pick">Pick!</button>
+        </div>
+
+        <div class="gameplay__wrapper">
+          No... The hidden number is bigger!
+        </div>
+      </form>
     </section>
   </div>
 </body>

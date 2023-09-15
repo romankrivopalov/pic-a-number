@@ -7,6 +7,11 @@
 @import url('../blocks/container/container.css');
 @import url('../blocks/container/_lift-up/container_lift-up.css');
 
+@import url('../blocks/btn/btn.css');
+@import url('../blocks/btn/_type/btn_type_start.css');
+@import url('../blocks/btn/_type/btn_type_reset.css');
+@import url('../blocks/btn/_type/btn_type_pick.css');
+
 @import url('../blocks/start/start.css');
 @import url('../blocks/start/__title/start__title.css');
 @import url('../blocks/start/__content/start__content.css');
@@ -15,4 +20,13 @@
 @import url('../blocks/start/__column/start__column.css');
 @import url('../blocks/start/__label/start__label.css');
 @import url('../blocks/start/__input/start__input.css');
-@import url('../blocks/start/__btn/start__btn.css');
+
+@import url('../blocks/gameplay/gameplay.css');
+@import url('../blocks/gameplay/__row/gameplay__row.css');
+@import url('../blocks/gameplay/__content/gameplay__content.css');
+@import url('../blocks/gameplay/__input/gameplay__input.css');
+@import url('../blocks/gameplay/__wrapper/gameplay__wrapper.css');
+
+@import url('../blocks/moves/moves.css');
+@import url('../blocks/moves/__label/moves__label.css');
+@import url('../blocks/moves/__count/moves__count.css');

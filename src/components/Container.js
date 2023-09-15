@@ -2,7 +2,6 @@ class Container {
   constructor(setting) {
     this._setting = setting;
     this._container = document.querySelector(this._setting.containerSelector);
-    console.log(setting)
   }
 
   handleLiftUp = () => {
