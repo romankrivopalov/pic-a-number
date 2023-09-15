@@ -6,10 +6,11 @@
   gap: 16px;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .start__wrapper {
-    gap: 24px;
+    gap: 40px;
   }
 }

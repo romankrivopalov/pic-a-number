@@ -1,5 +1,14 @@
 .start__column {
   display: flex;
-  flex-direction: column;
-  max-width: 240px;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .start__column {
+    flex-direction: column;
+    gap: 0;
+    max-width: 240px;
+  }
 }

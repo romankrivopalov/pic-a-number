@@ -5,9 +5,12 @@
 @import url('../blocks/page/page.css');
 
 @import url('../blocks/container/container.css');
+@import url('../blocks/container/_lift-up/container_lift-up.css');
 
 @import url('../blocks/start/start.css');
 @import url('../blocks/start/__title/start__title.css');
+@import url('../blocks/start/__content/start__content.css');
+@import url('../blocks/start/__subtitle/start__subtitle.css');
 @import url('../blocks/start/__wrapper/start__wrapper.css');
 @import url('../blocks/start/__column/start__column.css');
 @import url('../blocks/start/__label/start__label.css');

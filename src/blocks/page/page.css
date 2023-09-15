@@ -17,6 +17,7 @@
   background-color: var(--color-system-yellow);
   background-image: url('../../images/icon-background.svg');
   background-size: 40px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {

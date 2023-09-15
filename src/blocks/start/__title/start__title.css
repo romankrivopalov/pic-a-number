@@ -2,15 +2,15 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  font-size: 32px;
-  line-height: 40px;
-  color: var(--color-system-white);
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--color-system-black);
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
   .start__title {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 56px;
+    line-height: 72px;
   }
 }
