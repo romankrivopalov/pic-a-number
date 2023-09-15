@@ -11,19 +11,25 @@
     <div class="header">
       reset
     </div>
-    <div class="start">
+    <form class="start" id="start-form" name="start-form" novalidate>
       <p class="start__title">choose a range</p>
       <div class="start__wrapper">
-        <div class="column">
-          <p>from</p>
-          <input class="start__input">1</input>
+        <div class="start__column">
+          <p class="start__label">From</p>
+          <input class="start__input" type="number" value="1" min="1" max="999" data-type="first" />
         </div>
-        <div class="column">
-          <p>to</p>
-          <input class="start__input">100</input>
+        <div class="start__column">
+          <p class="start__label">To</p>
+          <input class="start__input" type="number" value="1000" min="2" max="1000" data-type="last" />
         </div>
       </div>
-    </div>
+      <button
+        class="start__btn"
+        data-type="start"
+        type="submit">
+        Start!
+      </button>
+    </form>
   </div>
 </body>
 </html>

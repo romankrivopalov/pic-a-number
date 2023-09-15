@@ -1,0 +1,14 @@
+.start__label {
+  margin: 0;
+  padding: 0 0 8px;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-system-yellow);
+}
+
+@media screen and (min-width: 768px) {
+  .start__label {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
