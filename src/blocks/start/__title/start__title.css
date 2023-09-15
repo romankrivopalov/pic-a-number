@@ -1,0 +1,20 @@
+.start__title {
+  display: inline-block;
+  margin: 32px auto 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-system-purple);
+  background-color: var(--color-system-yellow);
+  box-shadow: 4px 4px 0 0 var(--color-system-black);
+  border-radius: 16px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .start__title {
+    font-size: 32px;
+    line-height: 48px;
+    box-shadow: 6px 6px 0 0 var(--color-system-black);
+  }
+}

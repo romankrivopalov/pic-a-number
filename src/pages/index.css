@@ -3,3 +3,9 @@
 @import url('../vendor/variables.css');
 
 @import url('../blocks/page/page.css');
+
+@import url('../blocks/container/container.css');
+
+@import url('../blocks/start/start.css');
+@import url('../blocks/start/__title/start__title.css');
+@import url('../blocks/start/__wrapper/start__wrapper.css');
