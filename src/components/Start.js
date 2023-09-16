@@ -27,7 +27,7 @@ class Start {
       this._inputs.some(input => !input.validity.valid) ||
       +this._inputs[0].value >= +this._inputs[1].value ||
       +this._inputs[0].value < 1 ||
-      +this._inputs[1].value <= 100)
+      +this._inputs[1].value < 100)
     {
       this._startBtn.classList.add(this._setting.btnActiveClass);
       this._startBtn.disabled = true;
