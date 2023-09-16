@@ -1,20 +1,21 @@
 class Gameplay {
-  constructor(setting, handleLiftContainerDown) {
+  constructor(setting, handleLiftContainerDown, handleSetCount, handleResetCount) {
     this._setting = setting;
     this._resetBtn = document.querySelector(this._setting.btnResetSelector);
     this._form = document.querySelector(this._setting.formSelector);
     this._input = this._form.querySelector('.gameplay__input');
-    this._moveCount = this._form.querySelector('.moves__count');
     this._pickBtn = this._form.querySelector('.btn[data-type="pick"]');
     this._info = this._form.querySelector('.gameplay__wrapper');
-    this._count = 0;
     this._handleLiftContainerDown = handleLiftContainerDown;
+    this._handleSetCount = handleSetCount;
+    this._handleResetCount = handleResetCount;
   }
 
   _endGame = () => {
     this._handleLiftContainerDown();
 
-    this._count = 0;
+    // обнуление счетчика
+    this._handleResetCount();
   }
 
   _checkInputValidity = (value) => {
@@ -25,13 +26,9 @@ class Gameplay {
     }
   }
 
-  _setCount = () => {
-    // увеличение счётчика с помощью префиксного инкремента
-    this._moveCount.textContent = ++this._count;
-  }
-
   _makeMove = () => {
-    this._setCount();
+    // увеличение хода в счетчике
+    this._handleSetCount();
 
     if (this._input.value === this._randomNum) {
       console.log('win')
