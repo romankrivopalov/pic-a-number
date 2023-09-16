@@ -3,11 +3,11 @@ class Gameplay {
     this._setting = setting;
     this._resetBtn = document.querySelector(this._setting.btnResetSelector);
     this._form = document.querySelector(this._setting.formSelector);
-    this._input = this._form.querySelector('.gameplay__input');
-    this._pickBtn = this._form.querySelector('.btn[data-type="pick"]');
-    this._info = this._form.querySelector('.gameplay__wrapper');
-    this._decor = document.querySelector('.decor[data-type="decor"]');
-    this._countHint = 0;
+    this._input = this._form.querySelector(this._setting.inputSelector);
+    this._pickBtn = this._form.querySelector(this._setting.pickBtnSelector);
+    this._info = this._form.querySelector(this._setting.infoSelector);
+    this._decor = document.querySelector(this._setting.decorSelector);
+    this._countHint = this._setting.countHint;
     this._handleLiftContainerDown = handleLiftContainerDown;
     this._handleSetCount = handleSetCount;
     this._handleResetCount = handleResetCount;
@@ -23,20 +23,20 @@ class Gameplay {
     // обнуление счетчика подсказок
     this._countHint
 
-    this._input.classList.remove('gameplay__input_guess');
+    this._input.classList.remove(this._setting.inputGuessSelector);
     this._input.disabled = false;
 
-    this._decor.classList.remove('decor_show');
+    this._decor.classList.remove(this._setting.decorShowClass);
 
     this._togglePickBtn(false);
   }
 
   _togglePickBtn = (value) => {
     if (!value) {
-      this._pickBtn.classList.remove('btn_type_inactive');
+      this._pickBtn.classList.remove(this._setting.btnInactiveSelector);
       this._pickBtn.disabled = false;
     } else {
-      this._pickBtn.classList.add('btn_type_inactive');
+      this._pickBtn.classList.add(this._setting.btnInactiveSelector);
       this._pickBtn.disabled = true;
     }
   }
@@ -57,10 +57,10 @@ class Gameplay {
       // если пользователь угадал
       this._info.textContent = `YES! you guessed it in ${this._handleGetCount()} attempts! The hidden number ${this._randomNum}`;
 
-      this._input.classList.add('gameplay__input_guess');
+      this._input.classList.add(this._setting.inputGuessSelector);
       this._input.disabled = true;
 
-      this._decor.classList.add('decor_show');
+      this._decor.classList.add(this._setting.decorShowClass);
 
       this._togglePickBtn(true);
     } else {
@@ -71,7 +71,7 @@ class Gameplay {
         : this._info.textContent = `No... the hidden number is bigger, and it is ${this._isEvenNumber ? 'EVEN' : 'ODD'}`;
 
         // сброс счётчика подсказки
-        this._countHint = 0;
+        this._countHint = this._setting.countHint;
       } else {
         this._input.value > this._randomNum
         ? this._info.textContent = 'No... the hidden number is smaller'

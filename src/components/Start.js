@@ -28,10 +28,10 @@ class Start {
       +this._inputs[0].value >= +this._inputs[1].value ||
       +this._inputs[0].value < 1)
     {
-      this._startBtn.classList.add('btn_type_inactive');
+      this._startBtn.classList.add(this._setting.btnActiveClass);
       this._startBtn.disabled = true;
     } else {
-      this._startBtn.classList.remove('btn_type_inactive');
+      this._startBtn.classList.remove(this._setting.btnActiveClass);
       this._startBtn.disabled = false;
     }
   }
