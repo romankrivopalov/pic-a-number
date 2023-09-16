@@ -1,0 +1,16 @@
+.btn_type_inactive {
+  color: var(--color-system-gray-dark);
+  background-color: var(--color-system-gray);
+  box-shadow: 1px 1px 0 0 var(--color-system-black);
+  transform: translate(5px, 5px);
+  cursor: auto;
+}
+
+.btn_type_inactive:active {
+  background-color: var(--color-system-gray);
+}
+
+.btn_type_inactive:hover {
+  box-shadow: 1px 1px 0 0 var(--color-system-black);
+  transform: translate(5px, 5px);
+}

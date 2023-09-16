@@ -1,0 +1,4 @@
+.gameplay__input_guess {
+  color: var(--color-system-white);
+  background-color: var(--color-system-pink);
+}

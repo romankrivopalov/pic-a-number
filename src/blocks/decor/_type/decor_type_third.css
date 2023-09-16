@@ -1,0 +1,7 @@
+.decor_type_third {
+  top: 50%;
+  left: 35%;
+  color: var(--color-system-white);
+  background-color: var(--color-system-green);
+  box-shadow: 6px 6px 0 0 var(--color-system-black);
+}

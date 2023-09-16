@@ -1,0 +1,9 @@
+.decor {
+  position: absolute;
+  margin: 0;
+  padding: 16px 32px;
+  background-color: var(--color-system-pink);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 0 var(--color-system-purple);
+  transition: all .5s ease-in-out;
+}

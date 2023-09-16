@@ -1,0 +1,7 @@
+.btn_type_pick {
+  background-color: var(--color-system-green);
+}
+
+.btn_type_pick:active {
+  background-color: var(--color-system-green-dark);
+}

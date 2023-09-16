@@ -1,0 +1,18 @@
+.decor_type_second {
+  display: block;
+  padding: 0;
+  left: 5%;
+  bottom: 5%;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  line-height: 64px;
+  color: var(--color-system-white);
+  text-align: center;
+  background-color: var(--color-system-pink);
+  border: 8px solid var(--color-system-purple);
+  border-radius: 100%;
+  box-shadow: none;
+  transform: rotate(340deg);
+  z-index: 10;
+}

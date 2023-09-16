@@ -1,0 +1,16 @@
+.gameplay {
+  margin: 0;
+  padding: 16px 0 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .gameplay {
+    padding: 40px 0 0 0;
+  }
+}

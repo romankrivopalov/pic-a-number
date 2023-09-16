@@ -1,0 +1,9 @@
+.decor_show {
+  transform: translateY(-300px) rotate(348deg);
+}
+
+@media screen and (min-width: 768px) {
+  .decor_show {
+    transform: translateY(-340px) rotate(348deg);
+  }
+}
