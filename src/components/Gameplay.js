@@ -6,6 +6,7 @@ class Gameplay {
     this._input = this._form.querySelector('.gameplay__input');
     this._pickBtn = this._form.querySelector('.btn[data-type="pick"]');
     this._info = this._form.querySelector('.gameplay__wrapper');
+    this._decor = document.querySelector('.decor[data-type="decor"]');
     this._countHint = 0;
     this._handleLiftContainerDown = handleLiftContainerDown;
     this._handleSetCount = handleSetCount;
@@ -24,6 +25,8 @@ class Gameplay {
 
     this._input.classList.remove('gameplay__input_guess');
     this._input.disabled = false;
+
+    this._decor.classList.remove('decor_show');
 
     this._togglePickBtn(false);
   }
@@ -56,6 +59,8 @@ class Gameplay {
 
       this._input.classList.add('gameplay__input_guess');
       this._input.disabled = true;
+
+      this._decor.classList.add('decor_show');
 
       this._togglePickBtn(true);
     } else {

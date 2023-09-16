@@ -1,0 +1,18 @@
+.decor_type_first {
+  top: 9%;
+  right: 2%;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-system-white);
+  transform: rotate(18deg);
+  z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+  .decor_type_first {
+    top: 16%;
+    right: 5%;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

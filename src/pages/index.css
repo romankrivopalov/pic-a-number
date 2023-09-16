@@ -32,3 +32,9 @@
 @import url('../blocks/moves/moves.css');
 @import url('../blocks/moves/__label/moves__label.css');
 @import url('../blocks/moves/__count/moves__count.css');
+
+@import url('../blocks/decor/decor.css');
+@import url('../blocks/decor/_type/decor_type_first.css');
+@import url('../blocks/decor/_type/decor_type_second.css');
+@import url('../blocks/decor/_type/decor_type_third.css');
+@import url('../blocks/decor/_show/decor_show.css');
