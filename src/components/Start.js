@@ -15,6 +15,10 @@ class Start {
     });
 
     this._handleLiftContainerUp();
+
+    // обнуление значения инпутов
+    this._inputs[0].value = 1;
+    this._inputs[1].value = 1000;
   }
 
   // проверка валидности полей

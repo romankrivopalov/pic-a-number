@@ -14,6 +14,7 @@ const gameplay = new Gameplay(
   container.handleLiftDown,
   count.setCount,
   count.resetCount,
+  count.getConut,
 )
 const start = new Start(
   all.startSetting,

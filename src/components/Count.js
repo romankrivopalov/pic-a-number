@@ -5,6 +5,10 @@ class Count {
     this._count = 0;
   }
 
+  getConut = () => {
+    return this._count;
+  }
+
   resetCount = () => {
     this._count = 0;
 

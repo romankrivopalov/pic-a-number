@@ -26,6 +26,7 @@
 @import url('../blocks/gameplay/__row/gameplay__row.css');
 @import url('../blocks/gameplay/__content/gameplay__content.css');
 @import url('../blocks/gameplay/__input/gameplay__input.css');
+@import url('../blocks/gameplay/__input/_guess/gameplay__input_guess.css');
 @import url('../blocks/gameplay/__wrapper/gameplay__wrapper.css');
 
 @import url('../blocks/moves/moves.css');
