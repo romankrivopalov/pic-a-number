@@ -1,5 +1,7 @@
 :root {
   --color-system-white: #FFF;
+  --color-system-gray: #b3b3b3;
+  --color-system-gray-dark: #888888;
   --color-system-black: #000;
   --color-system-yellow: #FBD800;
   --color-system-green: #7FAB16;

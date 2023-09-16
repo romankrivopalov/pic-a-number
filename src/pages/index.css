@@ -11,6 +11,7 @@
 @import url('../blocks/btn/_type/btn_type_start.css');
 @import url('../blocks/btn/_type/btn_type_reset.css');
 @import url('../blocks/btn/_type/btn_type_pick.css');
+@import url('../blocks/btn/_type/btn_type_inactive.css');
 
 @import url('../blocks/start/start.css');
 @import url('../blocks/start/__title/start__title.css');

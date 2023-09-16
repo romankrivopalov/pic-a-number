@@ -5,9 +5,11 @@ export const containerSetting = {
 
 export const startSetting = {
   formSelector: '#start-form',
+  startBtnSelector: '.btn[data-type="start"]',
+  inputSelecor: '.start__input',
 }
 
 export const gameplaySetting = {
+  formSelector: '#gameplay-form',
   btnResetSelector: '.btn[data-type="reset"]',
-  // formSelector: '#start-form',
 }
