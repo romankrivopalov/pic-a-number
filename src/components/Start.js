@@ -12,14 +12,18 @@ class Start {
     this._handlePickNumber({
       from: +this._inputs[0].value,
       to: +this._inputs[1].value,
-    })
+    });
 
     this._handleLiftContainerUp();
   }
 
   // проверка валидности полей
   _checkInputValidity = () => {
-    if (this._inputs.some(input => !input.validity.valid)) {
+    if (
+      this._inputs.some(input => !input.validity.valid) ||
+      +this._inputs[0].value >= +this._inputs[1].value ||
+      +this._inputs[0].value < 1)
+    {
       this._startBtn.classList.add('btn_type_inactive');
       this._startBtn.disabled = true;
     } else {
